@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geometry Genius</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="max-w-7xl mx-auto">
+
+    <header>
+      <div class="flex justify-between bg-green-100 p-5">
+        <h2>Interactive <br /><span>Geometry Genius</span></h2>
+        <button>blog</button>
+      </div>
+    </header>
+
+    <main class="flex justify-between mt-9">
+        <!-- tryangle area -->
+        <div class="w-3/4 grid grid-cols-3 gap-6">
+
+            <div class="card bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img src="./image/Polygon 1.png" alt="">
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Triangle</h2>
+                  <p>Area (A) = 0.5 X b X h</p>
+                  <div class="flex">
+                    <span>b</span>
+                    <input class="w-24 rounded-sm border p-2"  type="text" name="" id="bInput">
+                    <span>h</span> 
+                    <input class="w-24 rounded-sm p-2 border" type="text" name="" id="hInput">
+                  </div>
+                  <div>
+                    <h2 >area: <span id="areaTotal">0</span> <span>cm</span><sup>2</sup></h2>
+                  </div>
+                  <div class="card-actions">
+                    <button onclick="triangleAria()" id="submitBtn" class="btn btn-primary w-full">calculate</button>
+                  </div>
+                </div>
+              </div>
+
+        </div>
+        <!-- area calculate -->
+        <div class="w-1/4 border border-gray-500 rounded-md p-4">
+            <h2 class="font-bold">area calculate</h2>
+        </div>
+    </main>
+    <script src="/js/triangle.js"></script>
+  </body>
+</html>
